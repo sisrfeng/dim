@@ -1,6 +1,6 @@
-# 🌅 Twilight
+# 🌅 Dim
 
-**Twilight** is a Lua plugin for Neovim 0.5 that dims inactive portions of the code you're editing.
+**Dim** is a Lua plugin for Neovim 0.5 that dims inactive portions of the code you're editing.
 
 The plugin was heavily inspired by [Limelight](https://github.com/junegunn/limelight.vim),
 but uses [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter) for better dimming.
@@ -17,30 +17,14 @@ Pairs well with [zen-mode](https://github.com/folke/zen-mode.nvim).
 
 Install the plugin with your preferred package manager:
 
-### [packer](https://github.com/wbthomason/packer.nvim)
-
-```lua
--- Lua
-use {
-  "folke/twilight.nvim",
-  config = function()
-    require("twilight").setup {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    }
-  end
-}
-```
-
 ### [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
 " Vim Script
-Plug 'folke/twilight.nvim'
+Plug 'folke/dim.nvim'
 
 lua << EOF
-  require("twilight").setup {
+  require("dim").setup {
     -- your configuration comes here
     -- or leave it empty to use the default settings
     -- refer to the configuration section below
@@ -50,7 +34,7 @@ EOF
 
 ## ⚙️ Configuration
 
-Twilight comes with the following defaults:
+Dim comes with the following defaults:
 
 ```lua
 {
@@ -76,13 +60,13 @@ Twilight comes with the following defaults:
 
 ## 🚀 Usage
 
-You can manually trigger **Twilight** using the commands:
+You can manually trigger **Dim** using the commands:
 
-- `Twilight`: toggle twilight
-- `TwilightEnable`: enable twilight
-- `TwilightDisable`: disable twilight
+- `Dim`: toggle dim
+- `DimEnable`: enable dim
+- `DimDisable`: disable dim
 
 ## 🧘 Zen Mode Integration
 
-If you have [zen-mode](https://github.com/folke/zen-mode.nvim) installed, then **Twilight**
+If you have [zen-mode](https://github.com/folke/zen-mode.nvim) installed, then **Dim**
 is activated automatically. Refer to the Zen Mode documentation to disable.
