@@ -6,8 +6,8 @@ local defaults = {
     dimming = {
         alpha = 0.45, -- amount of dimming
         -- we try to get the foreground from the highlight groups or fallback color
-        color = { "Normal", "#ffffff" },
-        inactive = false, -- when true, other windows will be fully dimmed (unless they contain the same buffer)
+        color = { "Normal", "#ff0000" },
+        inactive = true, -- when true, other windows will be fully dimmed (unless they contain the same buffer)
     },
 
     context    = 10   , -- amount of lines we will try to show around the current line
